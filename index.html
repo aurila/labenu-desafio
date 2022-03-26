@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>F4Life</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="https://media.discordapp.net/attachments/935263178575736832/955240253935992872/f4life-banner.png" alt="logo-f4life" height="150em"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#principal"> Quem Somos</a></li>
+                        <li><a href="#fale-conosco"> Fale conosco</a></li>
+                        <li><a href="#contato"> Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="principal">
+
+                <a name="principal"></a><h2 class="titulo-principal">Quem Somos:</h2>
+                <img class="pequena-logo" src="https://media.discordapp.net/attachments/935263178575736832/955240340695183420/f4life-arte.png" alt="pequena logo F4life">
+
+                <p><strong>F4Life</strong> é uma empresa de aluguéis de repúblicas para pessoas universitárias. 
+                Similar aos modelos de <em>Quinto Andar</em> e <em>Loft</em>, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação. Venha conhecer um novo jeito de morar bem!
+                </p>
+            </section>
+
+            <section class="sobre">
+
+                <h3  class="titulo-principal"> Mais: </h3>
+                
+                <div class="conteudo-sobre">
+                    <ul class="lista-sobre">
+                        <li class="itens"><span>O lugar perfeito para você: <strong>F4Life</strong> está presente em todas as capitais brasileiras!</span></li>
+                        <li class="itens"><span>Temos diversas opções: simule e encontre o melhor para você!</span></li>
+                        <li class="itens"><span>Você está na graduação? Temos ofertas muito especiais para moradias compartilhadas e kitnets esperando por você. Não perca esta oportunidade!</span></li>
+                        <li class="itens"><span>Veja as nossas condições, você irá se surpreender!</span></li>
+                        <li class="itens"><span>Ainda está com dúvidas? Fale com a gente! Nos <a href="#fale-conosco">envie uma mensagem</a> ou entre em contato pelas <a href="#contato">nossas redes sociais</a>. Ficaremos felizes em atender você!</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="formulario">
+                <a name="fale-conosco"><h2 class="titulo-principal">Fale conosco:</h2></a>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="user@dominio.com">
+                    
+                    
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="80" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                    <div id="sucesso" class="resultado"></div>
+                    <div id="erro" class="resultado"></div>
+
+                    <input type="button" value="Enviar" class="enviar" onclick="enviarMensagem()">
+                </form>
+            </div>
+
+            <section>
+
+                <a name="contato"><h2 class="titulo-principal">Contatos:</h2> </a>
+
+                <ul class="contatos">
+                    <li>
+                        <a href="https://twitter.com/" target="_blank"><h2>Twitter</h2>
+                        <img src="https://media.discordapp.net/attachments/935263178575736832/955103998174691368/pngwing.com.png?width=427&height=427" width="60" height="60" >
+                        <p class="contatos-descricao">Fale conosco no Twitter</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                        <h2>Instagram</h2>
+                        <img src="https://media.discordapp.net/attachments/935263178575736832/955109239339249734/instagram_icon_logo.png?width=683&height=384" height="60"> 
+                        <p class="contatos-descricao">Fale conosco no Instagram</p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="http://facebook.com/" target="_blank">
+                        <h2>Facebook</h2>
+                        <img src="https://media.discordapp.net/attachments/935263178575736832/955109952106668082/Facebook-logo-1.png?width=614&height=384" height="60">
+                        <p class="contatos-descricao">Fale conosco no Facebook</p>                       
+                        </a>
+                    </li>                   
+                </ul>
+             </section>
+
+        </main>
+        <script src="script.js"></script>
+        <footer>
+            <img src="https://media.discordapp.net/attachments/935263178575736832/955240340695183420/f4life-arte.png">
+            <p class="copyright">	
+                &copy; F4life - 2022</p>
+        </footer>
+
+    </body>
+
+</html>

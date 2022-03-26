@@ -1,0 +1,242 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background: #132235;   
+    padding: 20px 0; 
+}
+.caixa{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 10px 0px 15px;
+    padding-inline: 10px;
+    padding-top: 10px;
+
+}
+nav a{
+    text-transform: uppercase;
+    color: #6ddad3;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #FEFEFE;
+    text-decoration: underline;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.principal{
+    padding: 3em 0;
+    line-height: 1.7em;
+    background: #FEFEFE;
+    width: 70%;
+    margin: 0 auto;
+}
+.principal p{
+    margin: 0 0 1em;
+    font-size: 20px;
+}
+ strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.pequena-logo {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 30px;
+}
+.sobre{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #6ddad3);
+    text-align: center;
+}
+.sobre a {
+    text-decoration: underline;
+    color: #000;
+    font-weight: bold;
+}
+.conteudo-sobre{
+    margin: 0 auto;
+    text-align: center;
+    display:inline-block;
+}
+.lista-sobre{
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+}
+.itens {
+    line-height: 1.5em;
+    text-decoration: none;
+    margin: 10px 0; 
+    text-align: left;
+}
+li span {
+    position: relative;
+    left: 10px;
+}
+.itens:before{
+    content: "🏡";
+}
+.formulario {
+    padding: 3em 0;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    background: linear-gradient(#6ddad3, #FEFEFE);
+}
+form label {
+    display: inline-block;
+    font-size: 20px;
+    margin:  10px 10px 10px 10px;
+    padding: 10px 10px;
+   
+}
+.input-padrao{
+    display: block;
+    margin: 0 auto;
+    padding:  10px 25px;
+    width:50% ;
+}
+.enviar{
+    width: 40%;
+    margin-top: 20px;
+    padding: 15px 0;
+    background: #132235;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: #65bdf0;
+    transform: scale(1.2);
+}
+.resultado {
+    display: none;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#sucesso {
+    border-color: #03a600;
+    background: #a7ff9d;
+    color: #03a600;
+}
+#erro {
+    border-color: #cf0000;
+    background: #ffc4c4;
+    color: #cf0000;
+}
+.contatos{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0px 0px;
+}
+.contatos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;   
+    margin: 0 1.5% 1.5% 1.5%; 
+    padding: 30px 10px 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 50px;
+}
+.contatos li h2 {
+    font-size: 150%;
+}
+.contatos li:hover{
+    border-color: #1bcbd1;
+}
+.contatos li:active{
+    border-color:#088C19;
+}
+.contatos li a {
+    text-decoration: none;
+    color: #000000;
+}
+.contatos li:hover h2{
+    font-size: 27px;
+}
+.contatos h2{
+    padding: 0 10px 10px 10px;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+.contatos-descricao{
+    font-size: 1em;
+    padding-top: 0.5em;
+    margin: 10px 10px 10px 10px;
+
+}
+footer{
+    text-align: center;
+    background-color: #132235;
+    padding: 40px 0;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+@media screen and (max-width:480px) {
+    .caixa, .principal, .form {
+        width: 95%;
+        padding: 30px 10px 10px 10px;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .contatos li h2{
+        font-size: 90%;
+    }
+}
